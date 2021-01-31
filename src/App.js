@@ -1,33 +1,48 @@
 import './App.scss';
-import Layout from './components/layout/layout.js';
-import {Navbar, Nav} from 'react-bootstrap';
-import {Link,Element} from 'react-scroll';
-
+import vid from './components/bg.mp4'
+import bg from './components/background.jpg'
+import Header from './components/layout/header'
+import Typical from 'react-typical'
 
 function App() {
   return (
     <>
-    <Navbar  bg="dark" variant="dark" expand="md"  sticky="top" style={{opacity:"0.8",zIndex:"10"}}>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto justify-content-center text-light" style={{ width: "100%" }}>
-         <Nav.Item className="m-1">
-          <Link activeClass="active" to="test1" spy={true} smooth={true} offset={-50} duration={1000} >
-            Test 1
-          </Link>
-         </Nav.Item>
-         <Nav.Item className="m-1"> 
-          <Link activeClass="active" to="test2" spy={true} smooth={true} offset={50} duration={1000} >
-            Test 2
-          </Link>
-         </Nav.Item>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
-    <section className="pt-5" id="test1" style={{height:"100vh",backgroundColor:"blue"}}>
-      <h1>Section 1</h1>
-    </section>
-    <section id="test2" style={{height:"100vh",backgroundColor:"red"}}>
+    <Header/>
+    <div id="home" className="section home" >
+      <video playsInline={true} autoPlay={true} muted={true} className="video" poster={bg} loop={true} style={{objectFit:"cover"}}> 
+        <source src={vid} type="video/mp4" style={{objectFit:"cover" }} />
+      </video>
+      <div className="overlay center">
+        <h1 className="">Gary Cordero</h1>
+        <p className="message">
+          Full-Stack Web Developer  
+        </p>
+      <div className="skillset">
+        <p className="skills text-center"> | Ruby | Ruby on Rails | JavaScript | Reactjs | CSS | Bootstrap | Java | </p>
+      </div>
+      <hr className="divisor"/> 
+          <div className="social">
+            {/*linkedin*/}
+            <a href ="https://www.linkedin.com/in/gary-a-cordero-rosa-048552145/" rel="noreferrer" target="_blank">
+              <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+            {/*Github*/}
+            <a href ="https://github.com/Gary1690" rel="noreferrer" target="_blank">
+              <i className="fa fa-github" aria-hidden="true"></i>
+            </a>
+             {/*Medium*/}
+            <a href ="https://medium.com/@garycordero1690" rel="noreferrer" target="_blank">
+              <i className="fa fa-medium" aria-hidden="true"></i>
+            </a>
+             {/*Email*/}
+            <a href ="mailto:garycordero1690@gmail.com" rel="noreferrer" target="_blank">
+              <i className="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+          </div>
+    </div>
+  </div>
+
+    <section id="about" style={{height:"100vh",backgroundColor:"red"}}>
       <h1>Section 1</h1>
     </section>
 

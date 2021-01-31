@@ -1,22 +1,19 @@
-// import {Navbar,Nav,NavDropdown,Container} from 'react-bootstrap';
-import { Link } from 'react-scroll'
+
+
 
 
 
 const Layout = ( ) => {
+    
+    return (
+    <>
 
+    </>
+    )
 }
 
-const Footer = () =>{
 
 
-}
 
-const Header = () =>{
-
-  return(
-    <></>
-  )
-}
 
 export default Layout ;
