@@ -3,6 +3,7 @@ import './App.scss';
 import Header from './components/layout/header'
 import Home from './components/home/home'
 import About from './components/about/about'
+import Resume from './components/resume/resume'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <Header/>
     <Home/>
     <About/>
+    <Resume/>
 
     <footer className="footer">
       <p>

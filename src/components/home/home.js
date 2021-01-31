@@ -1,6 +1,7 @@
 import React from 'react'
 import vid from './bg.mp4'
 import bg from './background.jpg'
+import Typical from 'react-typical'
 
 const Home = () => {
   return (
@@ -13,10 +14,25 @@ const Home = () => {
         <p className="message">
           Full-Stack Web Developer  
         </p>
+        <p className="message mt-5">
+          <Typical
+            loop = {Infinity}
+            wrapper = "b"
+            steps = {[
+              "Think.",
+              1000,
+              "Solve.",
+              1000,
+              "Inovate!",
+              1000
+            ]}
+          />
+        </p>
+        
       <div className="skillset">
-        <p className="skills text-center"> | Ruby | Ruby on Rails | JavaScript | Reactjs | CSS | Bootstrap | Java | </p>
+        <p className="skills text-center"> | Ruby | Ruby on Rails | JavaScript | Reactjs | Redux | SQL | CSS | Bootstrap | Java | Spring | </p>
       </div>
-      <hr className="divisor"/> 
+      <hr className="divisor w-75"/> 
           <div className="social">
             {/*linkedin*/}
             <a href ="https://www.linkedin.com/in/gary-a-cordero-rosa-048552145/" rel="noreferrer" target="_blank">
