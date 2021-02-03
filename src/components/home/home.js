@@ -3,6 +3,7 @@ import vid from './bg-black.mp4'
 import bg from './background.jpg'
 import Typical from 'react-typical'
 import './home.scss';
+import {Link} from 'react-scroll';
 
 const Home = () => {
   return (
@@ -52,6 +53,11 @@ const Home = () => {
             <a href ="mailto:garycordero1690@gmail.com" rel="noreferrer" target="_blank">
               <i className="fa fa-envelope-o" aria-hidden="true"></i>
             </a>
+          </div>
+          <div className="next-section">
+            <Link activeClass="active-link" to={"about"} spy={true} smooth={true} offset={50} duration={1000}>
+               <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+            </Link>
           </div>
       </div>
     </div>

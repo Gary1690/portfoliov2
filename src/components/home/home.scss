@@ -8,6 +8,16 @@
   opacity: .8;
 }
 
+#navBar{
+  background-color: #2C2929;
+  transition: all 1s linear;
+}
+
+#navBar.zero-opacity{
+  background-color: unset;
+}
+
+
 .video {
   margin: 0;
   height: inherit;
@@ -29,6 +39,22 @@
 .social i:hover{
   animation: shake 1s;
   animation-iteration-count:infinite;  
+}
+
+.next-section{
+  position: absolute;
+  bottom: 0;
+  margin:4em auto;
+}
+
+.next-section i{
+  color: white;
+  font-size: 3em;
+}
+
+.next-section i:hover{
+  transform: scale(1.5,1.5);
+  opacity: 1;
 }
 
 

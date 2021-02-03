@@ -1,19 +1,29 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {Navbar,Nav} from 'react-bootstrap';
 import { Link } from 'react-scroll'
 
 const Header = (props) =>{
-  console.log(props)
+  const [transparency,setTransparency] = useState(true)
+  
   return(
-    <Navbar  bg="dark" variant="dark" expand="md"  fixed="top" className="opacity-change">
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
+    <Navbar variant="dark" expand="md"  fixed="top" id={"navBar"} className={transparency ? "zero-opacity" : ""}>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler"/>
+      <Navbar.Collapse id="basic-navbar-nav" >
         <Nav className="mr-auto navigation">
           {
             props.navLinks.map( (x,key) => {
               return(
                 <Nav.Item key={key} className="m-2">
-                  <Link activeClass="active-link" to={x.to} spy={true} smooth={true} offset={x.offset} duration={x.duration}>
+                  <Link 
+                    activeClass="active-link" 
+                    to={x.to} 
+                    spy={true} 
+                    smooth={true} 
+                    offset={x.offset} 
+                    duration={x.duration}
+                    onSetActive={()=>{x.to==='home'&& setTransparency(true)}}
+                    onSetInactive={()=>{x.to==='home'&& setTransparency(false)}}
+                  >
                     {x.display} 
                   </Link>
                 </Nav.Item>
