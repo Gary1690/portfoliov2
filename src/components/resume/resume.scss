@@ -1,0 +1,57 @@
+@import '../../custom.scss';
+
+
+.resume{
+  height: 100vh;
+}
+
+.resume-title span{
+  border-bottom: 3px solid lightsteelblue;
+}
+
+@include media-breakpoint-down(sm) {
+  .achievement {
+    font-weight: bold;
+    font-size: 1em;
+    font-style: italic;
+  }
+  .location,.date {
+    font-weight: bold;
+    font-size: 1em;
+  }
+}
+
+@include media-breakpoint-up(md) { 
+  .achievement {
+    font-weight: bold;
+    font-size: 1.5em;
+    font-style: italic;
+    border-bottom: 1px solid dimgrey;
+  }
+  
+  .location,.date {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+}
+
+@include media-breakpoint-up(lg) { 
+  .resume-title{
+    display: inline;
+  }
+  .description{
+    display:flex;
+    justify-content:space-between;
+    flex-direction: row;
+    width: auto;
+    margin: auto;
+    text-align: center;
+  }
+  .date{
+    display: inline;
+  }
+  .location{
+    display: inline;
+  }
+}
+
