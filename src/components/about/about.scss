@@ -1,0 +1,72 @@
+
+@import '../../custom.scss';
+
+.avatar{
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.about{
+  padding: 0em;
+  height: 100vh;  
+}
+
+.about-title span{
+  border-bottom: 3px solid lightsteelblue;
+}
+
+
+@include media-breakpoint-down(sm) {
+  .avatar{
+    height: 10em;
+    width: 10em;
+    margin: 0 auto;
+  }
+  
+  .about-title{
+    text-align: center;
+    margin: 1em 0em;
+    font-weight: bold;
+  }
+  .about-message{
+    text-align: center;
+    padding: .5em;
+    font-size: 1.4em;
+  }
+}
+
+@include media-breakpoint-up(md) { 
+  .avatar{
+    height: 12em;
+    width: 12em;
+    margin: 0 auto;
+  }
+  .about-title{
+    text-align: center;
+    margin: 1em 0em;
+    font-weight: bolder;
+  }
+  .about-message{
+    text-align: center;
+    padding: .5em;
+    font-size: 1.8em;
+  }
+}
+
+@include media-breakpoint-up(lg) { 
+  .avatar{
+    height: 15em;
+    width: 15em;
+    margin: 0 auto;
+  }
+  .about-title{
+    text-align: left;
+    margin: 1em 0em;
+    font-weight: bolder;
+  }
+  .about-message{
+    text-align: left;
+    font-size: 2em;
+  }
+}
+
