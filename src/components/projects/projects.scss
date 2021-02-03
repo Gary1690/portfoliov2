@@ -1,0 +1,42 @@
+@import '../../custom.scss';
+
+.projects{
+  height: 100vh;
+  padding: 0em;
+  margin-bottom: 2em;
+  overflow-x: scroll;
+  background-color: #211e1e;
+}
+
+.card-icon i:hover{
+  transform: scale(1.5,1.5);
+}
+
+
+@include media-breakpoint-down(sm) {
+  .projects{
+    height: auto;
+    overflow-x:unset;
+    margin-bottom: 3em;
+  }
+  .card-icon{
+    font-size: 2em;
+    color: black;
+    margin: .5em;
+  }
+}
+
+@include media-breakpoint-up(md) { 
+ 
+}
+
+@include media-breakpoint-up(lg) { 
+  .card-icon{
+    font-size: 2.5em;
+    color: black;
+    margin: .5em;
+  }
+}
+
+
+

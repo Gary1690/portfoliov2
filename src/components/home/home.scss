@@ -4,6 +4,8 @@
   position: absolute;
   top:0;
   left:0;
+  background-color: black;
+  opacity: .8;
 }
 
 .video {
@@ -13,7 +15,6 @@
   object-fit:"cover";
   z-index: -100;
   position: relative;
-
 }
 
 .home{

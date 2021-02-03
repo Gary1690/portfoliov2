@@ -46,6 +46,10 @@
   right: 0;
 }
 
+.active-link{
+  color:lightsteelblue;
+  border-bottom: 2px solid lightsteelblue;
+}
 
 //shake and grow animation
 @keyframes shake {
@@ -262,14 +266,7 @@
 
 // }
 
-// .card-icon i:hover{
-//   transform: scale(1.5,1.5);
-// }
 
-// .active-link{
-//   color:lightsteelblue;
-//   border-bottom: 2px solid lightsteelblue;
-// }
 
 // .skillset{
 //   margin-top: 10em;

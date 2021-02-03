@@ -3,6 +3,9 @@
 
 .resume{
   height: 100vh;
+  padding: 0em;
+  background-color: #2d2929;
+  color: white;
 }
 
 .resume-title span{
@@ -10,6 +13,9 @@
 }
 
 @include media-breakpoint-down(sm) {
+  .resume-title{
+    font-size: 1.5em;
+  }
   .achievement {
     font-weight: bold;
     font-size: 1em;
@@ -18,6 +24,10 @@
   .location,.date {
     font-weight: bold;
     font-size: 1em;
+  }
+  .flex-variant{
+    display: flex;
+    flex-direction:column;
   }
 }
 
@@ -26,12 +36,15 @@
     font-weight: bold;
     font-size: 1.5em;
     font-style: italic;
-    border-bottom: 1px solid dimgrey;
   }
   
   .location,.date {
     font-weight: bold;
     font-size: 1.5em;
+  }
+  .flex-variant{
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -52,6 +65,10 @@
   }
   .location{
     display: inline;
+  }
+  .flex-variant{
+    display: flex;
+    flex-direction: row;
   }
 }
 

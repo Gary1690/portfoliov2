@@ -1,5 +1,5 @@
 import React from 'react'
-import vid from './bg.mp4'
+import vid from './bg-black.mp4'
 import bg from './background.jpg'
 import Typical from 'react-typical'
 import './home.scss';

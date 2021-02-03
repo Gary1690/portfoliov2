@@ -9,6 +9,8 @@
 .about{
   padding: 0em;
   height: 100vh;  
+  background-color: #2B2B2B;
+  color: white;
 }
 
 .about-title span{
@@ -26,6 +28,7 @@
   .about-title{
     text-align: center;
     margin: 1em 0em;
+    padding: .5em;
     font-weight: bold;
   }
   .about-message{
@@ -44,6 +47,7 @@
   .about-title{
     text-align: center;
     margin: 1em 0em;
+    padding: .5em;
     font-weight: bolder;
   }
   .about-message{
