@@ -1,27 +1,19 @@
 import './App.scss';
-
-import Header from './components/layout/header'
-import Home from './components/home/home'
-import About from './components/about/about'
-import Resume from './components/resume/resume'
+import Home from './components/home/home';
+import About from './components/about/about';
+import Resume from './components/resume/resume';
+import Projects from './components/projects/projects';
+import Layout from './components/layout/layout';
 
 
 function App() {
   return (
-    <>
-    <Header/>
-    <Home/>
-    <About/>
-    <Resume/>
-
-    <footer className="footer">
-      <p>
-        Author: Hege Refsnes <a href="mailto:hege@example.com">hege@example.com</a>
-      </p>
-    </footer>
-    </>
-
-    
+    <Layout>
+      <Home/>
+      <About/>
+      <Resume/>
+      <Projects/>
+    </Layout>
   );
 }
 

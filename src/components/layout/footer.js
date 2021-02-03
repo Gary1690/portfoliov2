@@ -3,8 +3,8 @@ import React from 'react'
 
 const Footer = () =>{
   return (
-    <footer>
-      <p>react app</p>
+    <footer className="footer">
+      <p> Made by Gary Cordero </p>
     </footer>
   )
 }

@@ -1,0 +1,104 @@
+@import '../../custom.scss';
+
+.overlay{
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.video {
+  margin: 0;
+  height: inherit;
+  width: inherit;
+  object-fit:"cover";
+  z-index: -100;
+  position: relative;
+
+}
+
+.home{
+  height:100vh;
+  padding: 0em;
+}
+
+.skillset{
+  margin-top: 3em;
+}
+
+.social i:hover{
+  animation: shake 1s;
+  animation-iteration-count:infinite;  
+}
+
+
+@include media-breakpoint-down(sm) {
+    .home-title{
+      text-align: center;
+      font-size: 3.5em;
+      font-weight: bolder;
+    } 
+    .home-message{
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    .skills {
+      text-align: center;
+      font-size: .8em;
+      font-weight: bold;
+
+    }
+    .social i {
+      color: white;
+      font-size: 2rem;
+      margin: 0em .5em;
+    }
+}
+
+@include media-breakpoint-up(md) { 
+  .home-title{
+    text-align: center;
+    font-size: 4.5em;
+    font-weight: bolder;
+  } 
+  .home-message{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+  }
+  .skills {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+
+  }
+  .social i {
+    color: white;
+    font-size: 2.2rem;
+    margin: 0em .5em;
+  }
+}
+
+@include media-breakpoint-up(lg) { 
+  .home-title{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bolder;
+  } 
+  .home-message{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  .skills {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+
+  }
+  .social i {
+    color: white;
+    font-size: 2.5rem;
+    margin: 0em .8em;
+  }
+}

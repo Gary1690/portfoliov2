@@ -3,8 +3,8 @@ import {Row,Col} from 'react-bootstrap'
 
 function Resume() {
   return (
-    <div id="resume" className="section resume" >
-      <div className="center">
+    <div id="resume" className="section resume">
+      <div className="center" >
         <Row className="w-100 mt-5">
           <Col sm={12}  md={{span:2,offset:2}} className="resume-left">
               <h3 className="resume-title"><span>EDUCATION</span></h3>
@@ -24,11 +24,11 @@ function Resume() {
           </Col>
         </Row>
         <hr className="divisor w-75"/>
-        <Row className="w-100">
+        <Row  className="w-100 mt-5" >
           <Col sm={12}  md={{span:2,offset:2}} className="resume-left">
               <h3 className="resume-title"><span>WORK EXPERIENCE</span></h3>
           </Col>
-          <Col sm={12} md={8} className="d-flex flex-column align-items-start">
+          <Col sm={12} md={8} className="d-flex flex-column align-items-start" >
               <div className="description">
               <h3 className="resume-title">Away</h3>
               <p className="location" > New York, NY</p> 
