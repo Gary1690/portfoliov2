@@ -26,7 +26,7 @@ const Home = () => {
               1000,
               "Solve.",
               1000,
-              "Inovate!",
+              "Innovate!",
               1000
             ]}
           />
