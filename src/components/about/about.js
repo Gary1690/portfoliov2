@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import avatar from './gary.jpg'
 import {Col,Row} from 'react-bootstrap'
-import './about.scss'
+
 
 function About() {
 

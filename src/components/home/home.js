@@ -2,7 +2,6 @@ import React from 'react'
 import vid from './bg-black.mp4'
 import bg from './background.jpg'
 import Typical from 'react-typical'
-import './home.scss';
 import {Link} from 'react-scroll';
 
 const Home = () => {

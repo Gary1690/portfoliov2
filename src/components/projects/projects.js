@@ -1,7 +1,6 @@
 import React from 'react';
 import {Card,Tooltip,OverlayTrigger} from 'react-bootstrap';
 import projectList from './projects-list';
-import './projects.scss';
 
 
 
