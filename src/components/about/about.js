@@ -21,6 +21,19 @@ function About() {
             <Col  xs={12} md={12} lg={8}>
               <h1 className="about-title"><span>About</span></h1>
               <p className="about-message">Full-stack web developer with strengths in Ruby, Java, and JavaScript frameworks. Strong foundation in software engineering and object-oriented programming concepts with experience in retail sales and business operations. </p>
+              <br/>
+              <p className="about-message">I might be a perfect fit!</p>
+              <a 
+               className="btn btn-outline-light m-1 ml-3"
+               href="https://docs.google.com/document/d/1q2vDrJvbcp9e4Hxtn4meJs2ygh6rB1OLUxf5qya5hUs/preview"
+               target="_blank"
+               rel="noreferrer"
+               > <i className="fa fa-eye" aria-hidden="true"/>  View Resume</a>
+              <a 
+              className="btn btn-outline-light m-1"
+              href="https://docs.google.com/document/d/1q2vDrJvbcp9e4Hxtn4meJs2ygh6rB1OLUxf5qya5hUs/export?format=pdf"
+        
+              > <i className="fa fa-download" aria-hidden="true"/> Download Resume</a>
             </Col>
           </Row>
         </div>
