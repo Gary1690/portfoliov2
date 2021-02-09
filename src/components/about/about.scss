@@ -35,6 +35,13 @@
     padding: .5em;
     font-size: 1.4em;
   }
+  .btn span{
+    display: none;
+  }
+  .text-sm-center{
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @include media-breakpoint-up(md) { 
@@ -54,6 +61,10 @@
     padding: .5em;
     font-size: 1.8em;
   }
+  .text-sm-center{
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @include media-breakpoint-up(lg) { 
@@ -70,6 +81,10 @@
   .about-message{
     text-align: left;
     font-size: 2em;
+  }
+  .text-sm-center{
+    display: flex;
+    justify-content: left;
   }
 }
 

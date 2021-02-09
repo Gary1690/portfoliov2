@@ -23,17 +23,22 @@ function About() {
               <p className="about-message">Full-stack web developer with strengths in Ruby, Java, and JavaScript frameworks. Strong foundation in software engineering and object-oriented programming concepts with experience in retail sales and business operations. </p>
               <br/>
               <p className="about-message">I might be a perfect fit!</p>
+              <div className="text-sm-center">
               <a 
                className="btn btn-outline-light m-1 ml-3"
                href="https://docs.google.com/document/d/1q2vDrJvbcp9e4Hxtn4meJs2ygh6rB1OLUxf5qya5hUs/preview"
                target="_blank"
                rel="noreferrer"
-               > <i className="fa fa-eye" aria-hidden="true"/>  View Resume</a>
+               > 
+                <i className="fa fa-eye" aria-hidden="true"/> <span>View</span> Resume
+              </a>
               <a 
               className="btn btn-outline-light m-1"
               href="https://docs.google.com/document/d/1q2vDrJvbcp9e4Hxtn4meJs2ygh6rB1OLUxf5qya5hUs/export?format=pdf"
-        
-              > <i className="fa fa-download" aria-hidden="true"/> Download Resume</a>
+              > 
+              <i className="fa fa-download" aria-hidden="true"/> <span>Download</span> Resume
+              </a>
+              </div>
             </Col>
           </Row>
         </div>
