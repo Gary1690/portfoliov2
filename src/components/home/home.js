@@ -55,7 +55,7 @@ const Home = () => {
           </div>
           <div className="next-section">
             <Link activeClass="active-link" to={"about"} spy={true} smooth={true} offset={50} duration={1000}>
-               <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+               <i className="fa fa-chevron-circle-down" aria-hidden="true"></i>
             </Link>
           </div>
       </div>
